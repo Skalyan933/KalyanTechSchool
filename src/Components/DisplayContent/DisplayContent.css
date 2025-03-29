@@ -1,0 +1,313 @@
+.courseDetails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+/* Left Side */
+.leftSide {
+  flex: 1;
+  min-width: 300px;
+  max-width: 900px;
+  text-align: left;
+}
+
+.leftSide h2 {
+  color: black;
+}
+
+/* Content */
+.content {
+  background: white;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-left: 5px solid #007bff;
+  padding-left: 10px;
+}
+
+/* Lists */
+.learning-list, .lesson-list {
+  list-style: none;
+  padding: 0;
+}
+
+.learning-item, .lesson-item {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bullet, .lesson-icon {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #28a745;
+}
+
+/* Tech Badges */
+.tech-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tech-badge {
+  background: linear-gradient(135deg, #007bff, #00d4ff);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tech-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tech-icon {
+  font-size: 16px;
+  color: #fff;
+}
+
+.empty-message {
+  font-style: italic;
+  color: #888;
+  text-align: center;
+  width: 100%;
+}
+
+/* Modules */
+.module {
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.module-title {
+  font-size: 20px;
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+/* Right Side */
+.rightSide {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 340px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Price Tag */
+.priceTag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Prices */
+.original-price {
+  text-decoration: line-through;
+  color: red;
+  font-size: 18px;
+}
+
+.offer-price {
+  color: green;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Discount Badge */
+.discount {
+  background-color: yellow;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Course Image */
+.rightSide .course-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 0 auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Headings */
+.rightSide h2 {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.rightSide h3 {
+  font-size: 18px;
+  color: #2ecc71;
+}
+
+.rightSide h4 {
+  font-size: 16px;
+  font-style: italic;
+  color: gray;
+  margin-top: 15px;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.rightSide h4 span {
+  font-style: italic;
+  color: blue;
+}
+
+/* Button */
+.rightSide button {
+  background: #eccd05fe;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.rightSide button:hover {
+  background: blue;
+}
+
+/* Course Details */
+.rightSide p {
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.rightSide ul {
+  text-align: left;
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.rightSide ul li {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .courseDetails {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .leftSide {
+      width: 100%;
+      max-width: 100%;
+  }
+
+  .rightSide {
+      width: 100%;
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .rightSide {
+      width: 95%;
+      padding: 15px;
+  }
+
+  .rightSide h1 {
+      font-size: 20px;
+  }
+
+  .rightSide button {
+      font-size: 16px;
+      padding: 10px 15px;
+  }
+
+  .rightSide ul {
+      text-align: center;
+  }
+
+  .rightSide ul li {
+      font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+      padding: 15px;
+  }
+
+  .section-title {
+      font-size: 20px;
+  }
+
+  .learning-item, .lesson-item {
+      font-size: 14px;
+  }
+
+  .rightSide {
+      padding: 10px;
+  }
+
+  .rightSide h2 {
+      font-size: 18px;
+  }
+
+  .rightSide button {
+      font-size: 14px;
+      padding: 8px 12px;
+  }
+
+  .rightSide ul li {
+      font-size: 12px;
+  }
+}

@@ -1,0 +1,121 @@
+/* JobPortal.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    margin-top: -20px;
+}
+
+/* Job Portal Container */
+.p-6 {
+    padding: 24px;
+    min-height: 100vh;
+    background: #f5f7fa;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Filter Buttons */
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bg-blue-600 {
+    background: #007bff;
+}
+
+.bg-blue-600:hover {
+    background: #0056b3;
+}
+
+.bg-gray-500 {
+    background: #6c757d;
+}
+
+.bg-gray-500:hover {
+    background: #495057;
+}
+
+/* Job Listings Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+    gap: 20px;
+}
+
+/* Job Card */
+.bg-white {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.6s;
+}
+
+.bg-white:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Job Title */
+.text-xl {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Job Details */
+.text-gray-600 {
+    color: #6c757d;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Apply Button */
+.bg-blue-600 {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 14px;
+    background: #007bff;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+.bg-blue-600:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}

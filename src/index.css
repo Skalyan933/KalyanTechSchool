@@ -1,0 +1,17 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color:#f8f9fa;
+
+}
+
+.container {
+  width: 100%;  
+  min-height: 100vh;
+  max-width: 1220px;
+  padding-top: 90px;
+  margin: 0 auto;  
+  display: flex;
+  flex-direction: column; 
+}

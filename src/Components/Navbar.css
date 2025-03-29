@@ -1,0 +1,117 @@
+/* Navbar Styling */
+.navbar_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #1e2939;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1200px;
+    border-radius: 10px;
+    width: 100%;
+    z-index: 1000;
+}
+/* Center content */
+.navbar_container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav_logo h2{
+    color: white;
+}
+
+/* Menu */
+.nav_menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_menu ul li {
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav_menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+
+.nav_menu ul li a.active {
+    color: yellow;
+}
+
+.nav_menu ul li:hover {
+    color: #ffeb3b;
+}
+.nbtn{
+    background-color: #007bff; /* Primary blue color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: -24px;
+  }
+  
+  .nbtn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+    color: white;
+  }
+  
+
+/* Mobile Menu */
+.menu_toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav_menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #1e2939;
+        text-align: center;
+    }
+
+    .nav_menu.open {
+        display: block;
+    }
+
+    .nav_menu ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .menu_toggle {
+        display: block;
+    }
+}
